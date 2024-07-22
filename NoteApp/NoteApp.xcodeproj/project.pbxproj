@@ -18,6 +18,7 @@
 		3C6C57F42C4DF8C900A05581 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C57F32C4DF8C900A05581 /* Note.swift */; };
 		3C6C57F62C4DF90800A05581 /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C57F52C4DF90800A05581 /* NoteViewModel.swift */; };
 		3C6C57FA2C4DFE5300A05581 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C57F92C4DFE5300A05581 /* FormView.swift */; };
+		3C6C57FC2C4E21BE00A05581 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C57FB2C4E21BE00A05581 /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3C6C57F32C4DF8C900A05581 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		3C6C57F52C4DF90800A05581 /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		3C6C57F92C4DFE5300A05581 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		3C6C57FB2C4E21BE00A05581 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				3C6C57F32C4DF8C900A05581 /* Note.swift */,
 				3C6C57F52C4DF90800A05581 /* NoteViewModel.swift */,
 				3C6C57F92C4DFE5300A05581 /* FormView.swift */,
+				3C6C57FB2C4E21BE00A05581 /* DetailsView.swift */,
 				3C6C57E02C4DE8E300A05581 /* Assets.xcassets */,
 				3C6C57E22C4DE8E300A05581 /* Preview Content */,
 			);
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C6C57F62C4DF90800A05581 /* NoteViewModel.swift in Sources */,
+				3C6C57FC2C4E21BE00A05581 /* DetailsView.swift in Sources */,
 				3C6C57DF2C4DE8E100A05581 /* ContentView.swift in Sources */,
 				3C6C57FA2C4DFE5300A05581 /* FormView.swift in Sources */,
 				3C6C57DD2C4DE8E100A05581 /* NoteAppApp.swift in Sources */,
