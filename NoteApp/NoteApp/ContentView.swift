@@ -29,7 +29,7 @@ struct ContentView: View {
             .navigationTitle("Notes")
             .toolbar {
                 ToolbarItemGroup(placement: .bottomBar) {
-                    Text(" X notes")
+                    Text(" \(viewModel.notes.count) notes")
                     Spacer()
                     Button {
                         showSheet.toggle()
