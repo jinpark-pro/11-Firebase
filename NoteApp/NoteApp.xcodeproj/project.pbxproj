@@ -71,9 +71,9 @@
 				3C6C57DC2C4DE8E100A05581 /* NoteAppApp.swift */,
 				3C6C57DE2C4DE8E100A05581 /* ContentView.swift */,
 				3C6C57F32C4DF8C900A05581 /* Note.swift */,
-				3C6C57F52C4DF90800A05581 /* NoteViewModel.swift */,
 				3C6C57F92C4DFE5300A05581 /* FormView.swift */,
 				3C6C57FB2C4E21BE00A05581 /* DetailsView.swift */,
+				3C6C57F52C4DF90800A05581 /* NoteViewModel.swift */,
 				3C6C57E02C4DE8E300A05581 /* Assets.xcassets */,
 				3C6C57E22C4DE8E300A05581 /* Preview Content */,
 			);
