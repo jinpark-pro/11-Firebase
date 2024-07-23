@@ -26,9 +26,9 @@ class NoteViewModel: ObservableObject {
     
     func fetchData() {
         // snapshotlistener: firestore 에서 지속적으로 메모리에 떠있으면서 변화 관찰
-        databaseReference?.addSnapshotListener { (querySnapshot, erro) in
+        databaseReference?.addSnapshotListener { (querySnapshot, error) in
             guard let documents = querySnapshot?.documents else {
-                print("No documents")
+                print("No documents : \(error?.localizedDescription ?? "-")")
                 return
             }
             // nosql 은 (key: value) 로 값이 없을수도 있으므로 optional
