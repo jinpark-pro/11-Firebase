@@ -14,6 +14,20 @@ class AuthViewModel: ObservableObject {
     @Published var user: User?
     var currentNonce: String?
 
+    func listenToAuthState() {
+        Auth.auth().addStateDidChangeListener { [weak self] _, user in
+            self?.user = user
+        }
+    }
+
+    func signOut() {
+        do {
+            try Auth.auth().signOut()
+        } catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
+        }
+    }
+    
     func randomNonceString(length: Int = 32) -> String {
         precondition(length > 0)
         let charset: [Character] =
