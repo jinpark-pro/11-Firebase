@@ -10,7 +10,6 @@
 		3CBF87A72C4F696D005FE80D /* SociallyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF87A62C4F696D005FE80D /* SociallyApp.swift */; };
 		3CBF87AB2C4F696E005FE80D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CBF87AA2C4F696E005FE80D /* Assets.xcassets */; };
 		3CBF87AE2C4F696E005FE80D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CBF87AD2C4F696E005FE80D /* Preview Assets.xcassets */; };
-		3CBF87B52C4F6A29005FE80D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CBF87B42C4F6A29005FE80D /* GoogleService-Info.plist */; };
 		3CBF87B82C4F6AAF005FE80D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3CBF87B72C4F6AAF005FE80D /* FirebaseAuth */; };
 		3CBF87BA2C4F6AAF005FE80D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3CBF87B92C4F6AAF005FE80D /* FirebaseFirestore */; };
 		3CBF87BC2C4F6AAF005FE80D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3CBF87BB2C4F6AAF005FE80D /* FirebaseFirestoreSwift */; };
@@ -21,6 +20,8 @@
 		3CBF87C62C4F7907005FE80D /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF87C52C4F7907005FE80D /* FeedView.swift */; };
 		3CBF87C92C4F84CC005FE80D /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF87C82C4F84CC005FE80D /* AuthViewModel.swift */; };
 		3CBF87CB2C4F8506005FE80D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF87CA2C4F8506005FE80D /* SignUpViewModel.swift */; };
+		3CBF87CD2C50807D005FE80D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF87CC2C50807D005FE80D /* ProfileView.swift */; };
+		3CBF87D12C50831F005FE80D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CBF87D02C50831F005FE80D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +29,6 @@
 		3CBF87A62C4F696D005FE80D /* SociallyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SociallyApp.swift; sourceTree = "<group>"; };
 		3CBF87AA2C4F696E005FE80D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CBF87AD2C4F696E005FE80D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3CBF87B42C4F6A29005FE80D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3CBF87BF2C4F6B7B005FE80D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		3CBF87C12C4F6CA4005FE80D /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		3CBF87C32C4F7342005FE80D /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		3CBF87C72C4F811F005FE80D /* Socially.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Socially.entitlements; sourceTree = "<group>"; };
 		3CBF87C82C4F84CC005FE80D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		3CBF87CA2C4F8506005FE80D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		3CBF87CC2C50807D005FE80D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3CBF87D02C50831F005FE80D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,7 @@
 		3CBF879A2C4F696D005FE80D = {
 			isa = PBXGroup;
 			children = (
-				3CBF87B42C4F6A29005FE80D /* GoogleService-Info.plist */,
+				3CBF87D02C50831F005FE80D /* GoogleService-Info.plist */,
 				3CBF87A52C4F696D005FE80D /* Socially */,
 				3CBF87A42C4F696D005FE80D /* Products */,
 			);
@@ -76,6 +78,7 @@
 				3CBF87C72C4F811F005FE80D /* Socially.entitlements */,
 				3CBF87A62C4F696D005FE80D /* SociallyApp.swift */,
 				3CBF87C32C4F7342005FE80D /* PostView.swift */,
+				3CBF87CC2C50807D005FE80D /* ProfileView.swift */,
 				3CBF87C52C4F7907005FE80D /* FeedView.swift */,
 				3CBF87BF2C4F6B7B005FE80D /* Post.swift */,
 				3CBF87C12C4F6CA4005FE80D /* PostViewModel.swift */,
@@ -164,7 +167,7 @@
 			files = (
 				3CBF87AE2C4F696E005FE80D /* Preview Assets.xcassets in Resources */,
 				3CBF87AB2C4F696E005FE80D /* Assets.xcassets in Resources */,
-				3CBF87B52C4F6A29005FE80D /* GoogleService-Info.plist in Resources */,
+				3CBF87D12C50831F005FE80D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CBF87CD2C50807D005FE80D /* ProfileView.swift in Sources */,
 				3CBF87C62C4F7907005FE80D /* FeedView.swift in Sources */,
 				3CBF87C22C4F6CA4005FE80D /* PostViewModel.swift in Sources */,
 				3CBF87C92C4F84CC005FE80D /* AuthViewModel.swift in Sources */,
@@ -328,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.jinpark.Socially;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Socially;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -357,7 +361,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.jinpark.Socially;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Socially;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
