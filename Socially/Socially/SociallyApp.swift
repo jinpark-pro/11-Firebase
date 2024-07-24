@@ -24,9 +24,23 @@ struct SociallyApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
     var body: some Scene {
-        WindowGroup {              
-            FeedView()
-                .environmentObject(PostViewModel())
+        WindowGroup {
+            TabView {
+                if authModel.user != nil {
+                    FeedView()
+                        .tabItem {
+                            Image(systemName: "text.bubble")
+                            Text("Feed")
+                        }
+                }
+                ProfileView()
+                    .tabItem {
+                        Image(systemName: "person.crop.circle")
+                        Text("Account")
+                    }
+            }
+            .environmentObject(authModel)
+            .environmentObject(PostViewModel())
         }
     }
 }
