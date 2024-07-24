@@ -22,6 +22,7 @@
 		3CBF87CB2C4F8506005FE80D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF87CA2C4F8506005FE80D /* SignUpView.swift */; };
 		3CBF87CD2C50807D005FE80D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF87CC2C50807D005FE80D /* ProfileView.swift */; };
 		3CBF87D12C50831F005FE80D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CBF87D02C50831F005FE80D /* GoogleService-Info.plist */; };
+		3CBF87DB2C50B572005FE80D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3CBF87DA2C50B572005FE80D /* FirebaseAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 				3CBF87B82C4F6AAF005FE80D /* FirebaseAuth in Frameworks */,
 				3CBF87BE2C4F6AAF005FE80D /* FirebaseStorage in Frameworks */,
 				3CBF87BA2C4F6AAF005FE80D /* FirebaseFirestore in Frameworks */,
+				3CBF87DB2C50B572005FE80D /* FirebaseAnalytics in Frameworks */,
 				3CBF87BC2C4F6AAF005FE80D /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,6 +63,7 @@
 				3CBF87D02C50831F005FE80D /* GoogleService-Info.plist */,
 				3CBF87A52C4F696D005FE80D /* Socially */,
 				3CBF87A42C4F696D005FE80D /* Products */,
+				3CBF87D92C50B572005FE80D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +157,13 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		3CBF87D92C50B572005FE80D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,6 +185,7 @@
 				3CBF87B92C4F6AAF005FE80D /* FirebaseFirestore */,
 				3CBF87BB2C4F6AAF005FE80D /* FirebaseFirestoreSwift */,
 				3CBF87BD2C4F6AAF005FE80D /* FirebaseStorage */,
+				3CBF87DA2C50B572005FE80D /* FirebaseAnalytics */,
 			);
 			productName = Socially;
 			productReference = 3CBF87A32C4F696D005FE80D /* Socially.app */;
@@ -479,6 +490,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3CBF87B62C4F6AAF005FE80D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		3CBF87DA2C50B572005FE80D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CBF87B62C4F6AAF005FE80D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
