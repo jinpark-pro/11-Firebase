@@ -14,7 +14,8 @@ struct FeedView: View {
     
     @FirestoreQuery(
         collectionPath: "Posts",
-        predicates: [.order(by: "datePublished", descending: true)]
+        predicates: [.order(by: "description", descending: false),
+                     .order(by: "datePublished", descending: true)]
     ) var posts: [Post]
     
     @State var showingPosts: Bool = false
