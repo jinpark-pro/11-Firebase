@@ -19,7 +19,7 @@
 		3CBF87C42C4F7342005FE80D /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF87C32C4F7342005FE80D /* PostView.swift */; };
 		3CBF87C62C4F7907005FE80D /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF87C52C4F7907005FE80D /* FeedView.swift */; };
 		3CBF87C92C4F84CC005FE80D /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF87C82C4F84CC005FE80D /* AuthViewModel.swift */; };
-		3CBF87CB2C4F8506005FE80D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF87CA2C4F8506005FE80D /* SignUpViewModel.swift */; };
+		3CBF87CB2C4F8506005FE80D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF87CA2C4F8506005FE80D /* SignUpView.swift */; };
 		3CBF87CD2C50807D005FE80D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF87CC2C50807D005FE80D /* ProfileView.swift */; };
 		3CBF87D12C50831F005FE80D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CBF87D02C50831F005FE80D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -35,7 +35,7 @@
 		3CBF87C52C4F7907005FE80D /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		3CBF87C72C4F811F005FE80D /* Socially.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Socially.entitlements; sourceTree = "<group>"; };
 		3CBF87C82C4F84CC005FE80D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
-		3CBF87CA2C4F8506005FE80D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		3CBF87CA2C4F8506005FE80D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		3CBF87CC2C50807D005FE80D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		3CBF87D02C50831F005FE80D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,13 +77,8 @@
 			children = (
 				3CBF87C72C4F811F005FE80D /* Socially.entitlements */,
 				3CBF87A62C4F696D005FE80D /* SociallyApp.swift */,
-				3CBF87C32C4F7342005FE80D /* PostView.swift */,
-				3CBF87CC2C50807D005FE80D /* ProfileView.swift */,
-				3CBF87C52C4F7907005FE80D /* FeedView.swift */,
-				3CBF87BF2C4F6B7B005FE80D /* Post.swift */,
-				3CBF87C12C4F6CA4005FE80D /* PostViewModel.swift */,
-				3CBF87C82C4F84CC005FE80D /* AuthViewModel.swift */,
-				3CBF87CA2C4F8506005FE80D /* SignUpViewModel.swift */,
+				3CBF87D32C509248005FE80D /* Posts */,
+				3CBF87D22C509227005FE80D /* Accounts */,
 				3CBF87AA2C4F696E005FE80D /* Assets.xcassets */,
 				3CBF87AC2C4F696E005FE80D /* Preview Content */,
 			);
@@ -96,6 +91,67 @@
 				3CBF87AD2C4F696E005FE80D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3CBF87D22C509227005FE80D /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				3CBF87D72C5092FA005FE80D /* Views */,
+				3CBF87D82C509304005FE80D /* ViewModels */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		3CBF87D32C509248005FE80D /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				3CBF87D62C5092E2005FE80D /* ViewModels */,
+				3CBF87D52C509268005FE80D /* Models */,
+				3CBF87D42C509253005FE80D /* Views */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		3CBF87D42C509253005FE80D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CBF87C52C4F7907005FE80D /* FeedView.swift */,
+				3CBF87C32C4F7342005FE80D /* PostView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3CBF87D52C509268005FE80D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3CBF87BF2C4F6B7B005FE80D /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CBF87D62C5092E2005FE80D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3CBF87C12C4F6CA4005FE80D /* PostViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3CBF87D72C5092FA005FE80D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CBF87CC2C50807D005FE80D /* ProfileView.swift */,
+				3CBF87CA2C4F8506005FE80D /* SignUpView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3CBF87D82C509304005FE80D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3CBF87C82C4F84CC005FE80D /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +241,7 @@
 				3CBF87C02C4F6B7B005FE80D /* Post.swift in Sources */,
 				3CBF87C42C4F7342005FE80D /* PostView.swift in Sources */,
 				3CBF87A72C4F696D005FE80D /* SociallyApp.swift in Sources */,
-				3CBF87CB2C4F8506005FE80D /* SignUpViewModel.swift in Sources */,
+				3CBF87CB2C4F8506005FE80D /* SignUpView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
