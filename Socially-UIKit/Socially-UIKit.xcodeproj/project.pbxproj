@@ -16,6 +16,7 @@
 		3CBF87FD2C51EA80005FE80D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF87FC2C51EA80005FE80D /* Post.swift */; };
 		3CBF87FF2C51EB44005FE80D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CBF87FE2C51EB44005FE80D /* GoogleService-Info.plist */; };
 		3CBF88012C52262F005FE80D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF88002C52262F005FE80D /* PostTableViewCell.swift */; };
+		3CBF88032C522C85005FE80D /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF88022C522C85005FE80D /* NewPostViewController.swift */; };
 		455BCA6959D24F2083077528 /* Pods_Socially_UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C0C2433D65FBD9F94F1839E /* Pods_Socially_UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		3CBF87FC2C51EA80005FE80D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		3CBF87FE2C51EB44005FE80D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3CBF88002C52262F005FE80D /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		3CBF88022C522C85005FE80D /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		F14BB7443286BA813DC25414 /* Pods-Socially-UIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Socially-UIKit.debug.xcconfig"; path = "Target Support Files/Pods-Socially-UIKit/Pods-Socially-UIKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 				3CBF87EA2C51D654005FE80D /* SceneDelegate.swift */,
 				3CBF87EC2C51D654005FE80D /* ViewController.swift */,
 				3CBF88002C52262F005FE80D /* PostTableViewCell.swift */,
+				3CBF88022C522C85005FE80D /* NewPostViewController.swift */,
 				3CBF87EE2C51D654005FE80D /* Main.storyboard */,
 				3CBF87F12C51D656005FE80D /* Assets.xcassets */,
 				3CBF87F32C51D656005FE80D /* LaunchScreen.storyboard */,
@@ -221,6 +224,7 @@
 				3CBF88012C52262F005FE80D /* PostTableViewCell.swift in Sources */,
 				3CBF87EB2C51D654005FE80D /* SceneDelegate.swift in Sources */,
 				3CBF87FD2C51EA80005FE80D /* Post.swift in Sources */,
+				3CBF88032C522C85005FE80D /* NewPostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
