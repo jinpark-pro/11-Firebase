@@ -13,6 +13,6 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Profile"
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.circle"), tag: 0)
+        self.view.backgroundColor = .white
     }
 }
