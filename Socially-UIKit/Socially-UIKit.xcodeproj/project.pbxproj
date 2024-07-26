@@ -17,6 +17,7 @@
 		3CBF88012C52262F005FE80D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF88002C52262F005FE80D /* PostTableViewCell.swift */; };
 		3CBF88032C522C85005FE80D /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF88022C522C85005FE80D /* NewPostViewController.swift */; };
 		3CBF88052C5323A9005FE80D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF88042C5323A9005FE80D /* ProfileViewController.swift */; };
+		3CBF88092C532DD6005FE80D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF88082C532DD6005FE80D /* AuthService.swift */; };
 		455BCA6959D24F2083077528 /* Pods_Socially_UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C0C2433D65FBD9F94F1839E /* Pods_Socially_UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		3CBF88002C52262F005FE80D /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		3CBF88022C522C85005FE80D /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		3CBF88042C5323A9005FE80D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3CBF88082C532DD6005FE80D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F14BB7443286BA813DC25414 /* Pods-Socially-UIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Socially-UIKit.debug.xcconfig"; path = "Target Support Files/Pods-Socially-UIKit/Pods-Socially-UIKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,18 +74,43 @@
 			isa = PBXGroup;
 			children = (
 				3CBF87E82C51D654005FE80D /* AppDelegate.swift */,
-				3CBF87FC2C51EA80005FE80D /* Post.swift */,
 				3CBF87EA2C51D654005FE80D /* SceneDelegate.swift */,
-				3CBF87EC2C51D654005FE80D /* FeedViewController.swift */,
-				3CBF88042C5323A9005FE80D /* ProfileViewController.swift */,
-				3CBF88002C52262F005FE80D /* PostTableViewCell.swift */,
-				3CBF88022C522C85005FE80D /* NewPostViewController.swift */,
+				3CBF880A2C532DDB005FE80D /* Services */,
+				3CBF88072C532DA2005FE80D /* Post */,
+				3CBF88062C532D83005FE80D /* Account */,
 				3CBF87F12C51D656005FE80D /* Assets.xcassets */,
 				3CBF87F32C51D656005FE80D /* LaunchScreen.storyboard */,
 				3CBF87F62C51D656005FE80D /* Info.plist */,
 				3CBF87FE2C51EB44005FE80D /* GoogleService-Info.plist */,
 			);
 			path = "Socially-UIKit";
+			sourceTree = "<group>";
+		};
+		3CBF88062C532D83005FE80D /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				3CBF88042C5323A9005FE80D /* ProfileViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		3CBF88072C532DA2005FE80D /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				3CBF87FC2C51EA80005FE80D /* Post.swift */,
+				3CBF88002C52262F005FE80D /* PostTableViewCell.swift */,
+				3CBF87EC2C51D654005FE80D /* FeedViewController.swift */,
+				3CBF88022C522C85005FE80D /* NewPostViewController.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		3CBF880A2C532DDB005FE80D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3CBF88082C532DD6005FE80D /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		40151EB5BAB7A2D9F1DC0A39 /* Pods */ = {
@@ -225,6 +252,7 @@
 				3CBF88052C5323A9005FE80D /* ProfileViewController.swift in Sources */,
 				3CBF87FD2C51EA80005FE80D /* Post.swift in Sources */,
 				3CBF88032C522C85005FE80D /* NewPostViewController.swift in Sources */,
+				3CBF88092C532DD6005FE80D /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
